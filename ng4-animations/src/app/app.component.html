@@ -2,10 +2,26 @@
   <h1>
     Welcome to {{title}}!!
   </h1>
-  
   <p class="ui-animation" [@myAnimation]="state" (click)="animateMe()"> I will animate</p>
-  
-  <p class="fly-in-out" [@flyInOut] = "flyState">fly in out</p>
+  <p class="fly-in-out" [@flyInOut]="flyState">fly in out</p>
+  <div id="container" [@listAnimation]="items.length">
+    <button (click)="pushItem()">Add item</button>
+    <button (click)="removeItem()">Remove item</button>
+    <div id="list" *ngFor="let item of items">
+      {{ item }}
+    </div>
+    <div [@expAnimation]>
+      <div class="col">
+        <p>I think Wkylin is one of the bets learning resources online for Angular.</p>
+      </div>
+      <div class="col">
+        <p>I think Wkylin is one of the bets learning resources online for Angular.</p>
+      </div>
+      <div class="col">
+        <p>I think Wkylin is one of the bets learning resources online for Angular.</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 
