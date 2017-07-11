@@ -27,3 +27,33 @@ This README would normally document whatever steps are necessary to get your app
 
 * Repo owner or admin
 * Other community or team contact
+
+
+# How to Use
+
+- quick start
+
+``` bash
+git clone https://wkylin@bitbucket.org/sternatech/dishuihu.git
+cd dishuihu
+npm install
+```
+
+- development
+
+```bash
+npm run dev
+```
+
+- build
+
+```bash
+npm run build
+```
+
+- dist
+```bash
+cd dist
+npm install http-server -g 
+http-server -a IP -p Port
+```
